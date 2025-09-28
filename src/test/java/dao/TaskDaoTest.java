@@ -7,10 +7,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
+
 import javax.sql.DataSource;
 import java.io.InputStream;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -23,7 +23,7 @@ class TaskDaoTest {
   private TaskDao taskDao;
 
   @BeforeAll
-  public void setUp() {
+  public  void setUp() {
     try {
       DataSource dataSource = EmbeddedPostgres
               .builder()
